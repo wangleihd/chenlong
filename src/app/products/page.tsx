@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 import { Check, Cpu, ShoppingCart, Settings, BookOpen, Monitor, Briefcase } from "lucide-react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Metadata } from 'next';
@@ -60,7 +61,7 @@ export default function ProductsPage() {
                 <div className="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg">
                     <div className="mx-auto max-w-4xl w-full p-4">
                         <video 
-                            src="/demo.mp4" 
+                            src="./demo.mp4" 
                             controls 
                             className="w-full rounded-xl" 
                             autoPlay 
@@ -81,8 +82,8 @@ export default function ProductsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
                 <div className="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg">
                     <img 
-                        src="/robot-tennis.png" 
-                        alt="辰龙OS智能机器人捡球演示" 
+                        src="./robot-tennis.png" 
+                        alt="辰龙OS智能机器人捡球演示"
                         className="w-full h-auto object-cover p-4"
                     />
                     <p className="text-center text-sm text-muted-foreground p-4">
@@ -91,7 +92,7 @@ export default function ProductsPage() {
                 </div>
                 <div className="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg">
                     <img 
-                        src="/robot-arm.png" 
+                        src="./robot-arm.png" 
                         alt="辰龙OS机械臂机器人" 
                         className="w-full h-auto object-cover p-4"
                     />
