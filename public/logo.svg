@@ -1,0 +1,33 @@
+<svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="100" fill="#1E40AF"/>
+  <!-- Logo图形 -->
+  <g fill="#F3E8FF">
+    <!-- 第一行 -->
+    <circle cx="35" cy="25" r="15"/>
+    <circle cx="85" cy="25" r="15"/>
+    <circle cx="135" cy="25" r="15"/>
+    <!-- 第二行 -->
+    <circle cx="35" cy="50" r="15"/>
+    <circle cx="85" cy="50" r="15"/>
+    <circle cx="135" cy="50" r="15"/>
+    <!-- 第三行 -->
+    <circle cx="60" cy="75" r="15"/>
+    <circle cx="110" cy="75" r="15"/>
+    <!-- 连接线 -->
+    <path d="M35 40L50 50L60 60" stroke="#F3E8FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M85 40L70 50L60 60" stroke="#F3E8FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M135 40L120 50L110 60" stroke="#F3E8FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M60 90L85 75L110 90" stroke="#F3E8FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- 小圆点 -->
+    <circle cx="35" cy="25" r="5" fill="#1E40AF"/>
+    <circle cx="85" cy="25" r="5" fill="#1E40AF"/>
+    <circle cx="135" cy="25" r="5" fill="#1E40AF"/>
+    <circle cx="35" cy="50" r="5" fill="#1E40AF"/>
+    <circle cx="85" cy="50" r="5" fill="#1E40AF"/>
+    <circle cx="135" cy="50" r="5" fill="#1E40AF"/>
+    <circle cx="60" cy="75" r="5" fill="#1E40AF"/>
+    <circle cx="110" cy="75" r="5" fill="#1E40AF"/>
+  </g>
+  <!-- 文字 -->
+  <text x="50%" y="85" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#F3E8FF" text-anchor="middle">CHENLONGOS</text>
+</svg>
