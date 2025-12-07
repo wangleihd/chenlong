@@ -54,6 +54,52 @@ export default function ProductsPage() {
                     针对高校专业教学、职教技能实训、中小学兴趣启蒙三大场景，定制标准化“硬件+OS+资源”教学套件，兼顾教学专业性与实操便捷性，降低教育机构工具采购与课程落地门槛。
                 </p>
             </div>
+            
+            {/* 视频展示区 */}
+            <div className="mb-20">
+                <div className="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg">
+                    <div className="mx-auto max-w-4xl w-full p-4">
+                        <video 
+                            src="/demo.mp4" 
+                            controls 
+                            className="w-full rounded-xl" 
+                            autoPlay 
+                            muted 
+                            loop
+                            playsInline
+                        >
+                            您的浏览器不支持视频播放
+                        </video>
+                        <p className="text-center text-sm text-muted-foreground mt-4">
+                            辰龙OS教学套件演示视频
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            {/* 产品图片展示 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+                <div className="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                        src="/robot-tennis.png" 
+                        alt="辰龙OS智能机器人捡球演示" 
+                        className="w-full h-auto object-cover p-4"
+                    />
+                    <p className="text-center text-sm text-muted-foreground p-4">
+                        智能机器人捡球演示
+                    </p>
+                </div>
+                <div className="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                        src="/robot-arm.png" 
+                        alt="辰龙OS机械臂机器人" 
+                        className="w-full h-auto object-cover p-4"
+                    />
+                    <p className="text-center text-sm text-muted-foreground p-4">
+                        辰龙OS机械臂机器人
+                    </p>
+                </div>
+            </div>
 
             <div className="grid gap-12 lg:gap-16">
                 {DETAILED_PRODUCTS.map((product) => (
