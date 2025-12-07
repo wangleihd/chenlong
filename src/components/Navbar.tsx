@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -11,11 +12,11 @@ export function Navbar() {
     const pathname = usePathname();
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
             <div className="container flex h-16 items-center justify-between">
                 <div className="flex items-center gap-8">
                     <Link href="/" className="flex items-center space-x-2">
-                        <img src="/icon.png" alt="辰龙OS Logo" className="h-8 md:h-9 w-auto object-contain" />
+                        <Image src="/icon.png" alt="辰龙OS Logo" width={36} height={36} className="h-8 md:h-9 w-auto object-contain" />
                         <span className="text-xl font-bold text-primary">辰龙OS</span>
                     </Link>
                     <nav className="hidden md:flex items-center gap-6">
@@ -57,7 +58,7 @@ export function Navbar() {
                         <SheetContent side="right">
                             <div className="grid gap-6 py-6">
                                 <Link href="/" className="flex items-center space-x-2">
-                                    <img src="/icon.png" alt="辰龙OS Logo" className="h-8 w-auto object-contain" />
+                                    <Image src="/icon.png" alt="辰龙OS Logo" width={32} height={32} className="h-8 w-auto object-contain" />
                                     <span className="font-bold text-primary">辰龙OS</span>
                                 </Link>
                                 <div className="grid gap-4">

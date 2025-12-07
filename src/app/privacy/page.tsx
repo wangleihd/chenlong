@@ -7,11 +7,11 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
     return (
-        <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-12 md:py-20">
+        <div className="min-h-screen bg-linear-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-12 md:py-20">
             <div className="container">
                 <div className="max-w-4xl mx-auto bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden">
                     {/* 头部 */}
-                    <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 md:p-12">
+                    <div className="bg-linear-to-r from-blue-600 to-indigo-600 text-white p-8 md:p-12">
                         <h1 className="text-3xl md:text-4xl font-bold mb-4">隐私政策</h1>
                         <p className="text-blue-100 text-lg">生效日期：2025年12月07日</p>
                     </div>
