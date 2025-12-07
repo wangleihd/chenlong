@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "辰龙OS",
   description: "辰龙OS官方网站",
   icons: {
-    icon: "/icon.png",
+    icon: "/favicon.ico",
   },
 };
 
