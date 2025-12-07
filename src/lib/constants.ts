@@ -9,6 +9,14 @@ export const NAV_LINKS = [
 
 export const PRODUCTS = [
     {
+        id: 'beginner',
+        name: '辰龙OS 初级入门版套件',
+        badge: '初级入门',
+        description: 'RV1126B开发板+单轮驱动小车底盘+入门级高清摄像头，适合个人AI与机器人技术入门学习。',
+        price: '¥299/套',
+        features: ['50+教学视频', '10+基础实验', 'RV1126B开发板', '轻量ROS2支持'],
+    },
+    {
         id: 'university',
         name: '辰龙OS 高校版',
         badge: 'AI/机器人专业适配',
