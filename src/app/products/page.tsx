@@ -118,7 +118,7 @@ export default function ProductsPage() {
                     <Card key={product.id} className="overflow-hidden border-2 hover:border-primary/50 transition-colors relative">
                         {/* 推荐标识 */}
                         {product.id === 'beginner' && (
-                            <div className="absolute top-0 left-0 bg-red-500 text-white text-xs font-bold px-3 py-1 transform -translate-y-1 -translate-x-1 rotate-[-10deg] shadow-lg">
+                            <div className="absolute top-0 left-0 bg-red-500 text-white text-md font-bold px-3 py-1 shadow-lg">
                                 推荐
                             </div>
                         )}
