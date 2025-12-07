@@ -81,18 +81,18 @@ export default function Home() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">全教育阶段覆盖，三款标准化教学套件</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">全教育阶段覆盖，四款标准化教学套件</h2>
             <p className="text-muted-foreground">针对不同教育阶段定制优化，满足差异化教学需求</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {PRODUCTS.map((product) => (
-              <div key={product.id} className="flex flex-col p-8 rounded-2xl border bg-card hover:shadow-lg transition-all duration-300">
+              <div key={product.id} className="flex flex-col p-6 rounded-2xl border bg-card hover:shadow-lg transition-all duration-300">
                 <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium w-fit mb-4">
                   {product.badge}
                 </div>
-                <h3 className="text-2xl font-bold mb-2">{product.name}</h3>
-                <p className="text-muted-foreground mb-6 flex-1">{product.description}</p>
-                <div className="text-2xl font-bold text-primary mb-6">{product.price}</div>
+                <h3 className="text-xl font-bold mb-3">{product.name}</h3>
+                <p className="text-muted-foreground mb-6 flex-1 text-sm">{product.description}</p>
+                <div className="text-xl font-bold text-primary mb-6">{product.price}</div>
                 <Button className="w-full" variant="outline" asChild>
                   <Link href="/products">
                     查看详情 <ArrowRight className="ml-2 h-4 w-4" />
