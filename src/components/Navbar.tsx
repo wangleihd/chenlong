@@ -55,33 +55,44 @@ export function Navbar() {
                                 <span className="sr-only">Toggle menu</span>
                             </Button>
                         </SheetTrigger>
-                        <SheetContent side="right">
-                            <div className="grid gap-6 py-6">
-                                <Link href="/" className="flex items-center space-x-2">
-                                    <Image src="./icon.png" alt="辰龙OS Logo" width={32} height={32} className="h-8 w-auto object-contain" />
-                                    <span className="font-bold text-primary">辰龙OS</span>
-                                </Link>
-                                <div className="grid gap-4">
-                                    {NAV_LINKS.map((link) => (
-                                        <Link
-                                            key={link.href}
-                                            href={link.href}
-                                            className={`text-sm font-medium transition-colors hover:text-primary ${pathname === link.href
-                                                    ? "text-foreground"
-                                                    : "text-muted-foreground"
-                                                }`}
-                                        >
-                                            {link.label}
+                        <SheetContent side="right" className="pr-0">
+                            <div className="h-full bg-white dark:bg-slate-800">
+                                <div className="mx-auto max-w-md w-full h-full p-6 flex flex-col">
+                                    <div className="mb-8">
+                                        <Link href="/" className="flex items-center space-x-2">
+                                            <Image src="./icon.png" alt="辰龙OS Logo" width={36} height={36} className="h-9 w-auto object-contain" />
+                                            <span className="text-xl font-bold text-primary">辰龙OS</span>
                                         </Link>
-                                    ))}
-                                    <Link
-                                        href="https://github.com/chenlongos"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-                                    >
-                                        GitHub <ExternalLink className="ml-2 h-4 w-4" />
-                                    </Link>
+                                    </div>
+                                    <nav className="flex-1 space-y-1">
+                                        {NAV_LINKS.map((link) => (
+                                            <Link
+                                                key={link.href}
+                                                href={link.href}
+                                                className={`flex items-center py-3 px-4 rounded-lg text-base font-medium transition-all duration-200 ${pathname === link.href
+                                                        ? "bg-blue-100 dark:bg-blue-900/30 text-primary font-semibold"
+                                                        : "text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/50"
+                                                    }`}
+                                            >
+                                                {link.label}
+                                            </Link>
+                                        ))}
+                                        <Link
+                                            href="https://github.com/chenlongos"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="flex items-center py-3 px-4 rounded-lg text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/50 transition-all duration-200"
+                                        >
+                                            <Github className="mr-3 h-5 w-5" />
+                                            GitHub
+                                            <ExternalLink className="ml-auto h-4 w-4 opacity-70" />
+                                        </Link>
+                                    </nav>
+                                    <div className="mt-8 pt-6 border-t border-slate-200 dark:border-slate-700">
+                                        <p className="text-sm text-slate-500 dark:text-slate-400 text-center">
+                                            © {new Date().getFullYear()} 辰龙OS
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </SheetContent>
