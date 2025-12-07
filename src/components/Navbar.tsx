@@ -15,7 +15,7 @@ export function Navbar() {
             <div className="container flex h-16 items-center justify-between">
                 <div className="flex items-center gap-8">
                     <Link href="/" className="flex items-center space-x-2">
-                        <img src="/logo.svg" alt="辰龙OS Logo" className="h-8 w-auto" />
+                        <img src="/logo.png" alt="辰龙OS Logo" className="h-8 md:h-9 w-auto object-contain" />
                         <span className="text-xl font-bold text-primary">辰龙OS</span>
                     </Link>
                     <nav className="hidden md:flex items-center gap-6">
@@ -57,7 +57,7 @@ export function Navbar() {
                         <SheetContent side="right">
                             <div className="grid gap-6 py-6">
                                 <Link href="/" className="flex items-center space-x-2">
-                                    <img src="/logo.svg" alt="辰龙OS Logo" className="h-8 w-auto" />
+                                    <img src="/logo.png" alt="辰龙OS Logo" className="h-8 w-auto object-contain" />
                                     <span className="font-bold text-primary">辰龙OS</span>
                                 </Link>
                                 <div className="grid gap-4">
