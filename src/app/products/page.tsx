@@ -12,6 +12,17 @@ export const metadata: Metadata = {
 
 const DETAILED_PRODUCTS = [
     {
+    id: 'beginner',
+    name: '辰龙OS 初级入门版套件',
+    tag: '初级入门',
+    price: '¥299/套',
+    priceNote: '入门级高性价比，无技术支持服务，适合个人爱好者入门学习',
+    hardware: 'RV1126B开发板 + 单轮驱动小车底盘 + 入门级高清摄像头',
+    software: '预装辰龙OS入门版，集成轻量ROS2基础组件、OpenCV基础版本、简易NPU推理工具，适配入门级AI视觉与小车运动控制场景',
+    resources: '50+入门级教学视频、10+基础实验案例（含小车循迹、摄像头图像采集完整项目）、《RV1126B开发板快速上手》手册、基础代码模板',
+    scenarios: '个人AI与机器人技术入门学习、中小学科技兴趣社团实践、零基础爱好者的嵌入式开发启蒙',
+    },
+    {
         id: 'university',
         name: '辰龙OS 高校版套件',
         tag: 'AI/机器人专业适配',
@@ -104,7 +115,13 @@ export default function ProductsPage() {
 
             <div className="grid gap-12 lg:gap-16">
                 {DETAILED_PRODUCTS.map((product) => (
-                    <Card key={product.id} className="overflow-hidden border-2 hover:border-primary/50 transition-colors">
+                    <Card key={product.id} className="overflow-hidden border-2 hover:border-primary/50 transition-colors relative">
+                        {/* 推荐标识 */}
+                        {product.id === 'beginner' && (
+                            <div className="absolute top-0 left-0 bg-red-500 text-white text-xs font-bold px-3 py-1 transform -translate-y-1 -translate-x-1 rotate-[-10deg] shadow-lg">
+                                推荐
+                            </div>
+                        )}
                         <div className="grid lg:grid-cols-5 gap-0">
                             <div className="lg:col-span-2 bg-muted/30 p-8 flex flex-col justify-between border-b lg:border-b-0 lg:border-r">
                                 <div>
