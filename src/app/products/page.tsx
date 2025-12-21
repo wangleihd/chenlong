@@ -61,10 +61,7 @@ export default function ProductsPage() {
     return (
         <div className="container py-16 md:py-24">
             <div className="text-center mb-16 space-y-4">
-                <h1 className="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">产品中心——全教育阶段教学套件</h1>
-                <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                    针对高校专业教学、职教技能实训、中小学兴趣启蒙三大场景，定制标准化“硬件+OS+资源”教学套件，兼顾教学专业性与实操便捷性，降低教育机构工具采购与课程落地门槛。
-                </p>
+                <h1 className="text-6xl font-bold tracking-tight md:text-6xl lg:text-6xl">辰龙AI机器人</h1>
             </div>
             
             {/* 视频展示区 */}
